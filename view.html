@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.118/styles/kendo.common.min.css">
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.118/styles/kendo.rtl.min.css">
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.118/styles/kendo.default.min.css">
+<link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.1.118/styles/kendo.mobile.all.min.css">
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.1.118/js/angular.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.1.118/js/jszip.min.js"></script>
+<script src="https://kendo.cdn.telerik.com/2017.1.118/js/kendo.all.min.js"></script>
+</head>
+<body onload="display_data();">
+  <div id="generate_pdf">
+    
+    <div class='row'>
+        <div class='col col-sm-1'>
+        </div>
+        <div class='col col-sm-7'>
+            <h1>INVOICE</h1>
+        </div>
+        <div class='col col-sm-4'>
+            <img src="logo.jpg">
+        </div>
+    </div>
+ <br>
+ <br>
+<div class='row'>
+  <div class='col col-sm-1'>
+  </div>
+    <div class='col col-sm-2'>
+        <table style="width:100%">
+            <tr>
+              <th>DATE</th>
+              <th>INVOICE NO</th> 
+            </tr>
+            <tr>
+              <td id="data_1">Nil</td>
+              <td id="data_2">Nil</td>
+            </tr>
+          </table>
+    </div>
+    <div class='col col-sm-6'>
+    </div>
+    <div class='col col-sm-3'>
+        <p>9159171382,9447765588</p>
+    </div>
+</div>
+<center><b><p>BILL TO</p></b></center>
+
+
+<div class='row'>
+  <div class='col col-sm-1'>
+  </div>
+<table style="width:81%">
+  <tr>
+    <th>NAME</th>
+    <td id="name"></td> 
+  </tr>
+  <tr>
+    <th>ADDRESS</th>
+    <td id="address"></td> 
+  </tr>
+  <tr>
+    <th>PHONE</th>
+    <td id="phone"></td> 
+  </tr>
+</table>
+</div>
+<br>
+<div class='row'>
+  <div class='col col-sm-1'>
+  </div>
+<table  id="new" style="width:81%">
+    <tr>
+        <th>S.NO</th>
+        <th>PRODUCT DESCRIPTION</th>
+        <th>PRICE</th>
+        <th>QUANTITY</th>
+        <th>AMOUNT</th>
+      </tr>
+      <tr>
+        <td id="sn1"></td>
+        <td id="product1"></td>
+        <td id="price1"></td>
+        <td id="quantity1"></td>
+        <td id="amount1"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td> 
+        <th>TOTAL AMOUNT</th>
+        <td id="total_amount1"></td>
+      </tr>
+
+      <tr>
+        <th>TAX</th>
+        <th>0%</th>
+        <td></td> 
+        <th>FINAL AMOUNT</th>
+        <td id="final_amount1"></td>
+      </tr>
+
+</table>
+</div>
+<br>
+<br>
+<center><button type="button" onclick="download_pdf();" id="download" class="btn btn-success">Download</button></center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer>
+   <center><p>IF YOU HAVE ANY QUERY ABOUT THIS PLEASE CONTACT US<br>
+        CASSIA'S GROUP,cassiasgroup@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>CASSIA'S GROUP</u></b></p></center>
+</footer>
+</div>
+<script src="functions.js"></script>
+
+</body>
+</html>
