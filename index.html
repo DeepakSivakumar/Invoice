@@ -19,21 +19,22 @@ table, th, td {
 <script src="https://kendo.cdn.telerik.com/2017.1.118/js/kendo.all.min.js"></script>
 </head>
 <body>
-  <div id="generate_pdf">
-    
+    <div class="container">
     <div class='row'>
-        <div class='col col-sm-1'>
+      <div class='col col-xs-4'>
+        <h1>INVOICE</h1>
+      </div>
+        <div class='col col-xs-5'>
         </div>
-        <div class='col col-sm-7'>
-            <h1>INVOICE</h1>
-        </div>
-        <div class='col col-sm-4'>
+        
+        <div class='col col-xs-3'>
             <img src="logo.jpg">
         </div>
     </div>
+  </div>
  <br>
  <br>
- <div class="container">
+<div class="container">
 <div class='row'>
     <div class='col col-sm-4'>
         <table style="width:100%">
@@ -47,8 +48,10 @@ table, th, td {
             </tr>
           </table>
     </div>
-    <div class='col col-sm-6'>
-        <p style="text-align: right;">9159171382,9447765588</p>
+    <div class='col col-sm-5'>  
+    </div>
+    <div class='col col-sm-3'>
+        <p>9159171382,9447765588</p>
     </div>
 </div>
 </div>
@@ -111,11 +114,13 @@ table, th, td {
 </table>
 </div>
 <br>
+<div class='container'>
 <div class='row'>
-  <div class='col col-lg-1'>
-  </div>
+  <div class='col col-lg-3'>
 <button type="button" onclick="adding_row()" id="add" class="btn btn-primary">Add Row</button>
 <button type="button" onclick="deleting_row()" id="delete" class="btn btn-danger">Delete Row</button><br>
+</div>
+</div>
 </div>
 <center><button type="button" onclick="calculating_data()" id="calculate" class="btn btn-success">Calculate</button></center>
 <br>
@@ -141,8 +146,7 @@ table, th, td {
 <footer>
    <center><p>IF YOU HAVE ANY QUERY ABOUT THIS PLEASE CONTACT US<br>
         CASSIA'S GROUP,cassiasgroup@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><u>CASSIA'S GROUP</u></b></p></center>
-</footer>
-</div>
+   </footer>
 <script src="functions.js"></script>
 
 </body>

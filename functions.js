@@ -35,6 +35,9 @@ function deleting_row() {
     document.getElementById("new").deleteRow(rowCount-3);
     } else{
         alert('Row cannot be delete!!!');
+        num3=num3+1;
+        num2=num2+1;
+        num1=num1+1;
     }
     sessionStorage.setItem("num",num3);
   }
@@ -64,6 +67,7 @@ function deleting_row() {
 
 function download_pdf(){
   document.getElementById("download").style.visibility = "hidden";
+  var final_invoice =sessionStorage.getItem("invoice1");
 kendo.drawing
 .drawDOM("#generate_pdf", 
 { 
@@ -76,7 +80,7 @@ kendo.drawing
 })
 
 .then(function(group){
-  kendo.drawing.pdf.saveAs(group, "Invoice.pdf");
+  kendo.drawing.pdf.saveAs(group, "'InvoiceNo:"+final_invoice+"'.pdf");
   });
   
 }
